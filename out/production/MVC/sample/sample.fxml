@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="237.0" prefWidth="460.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" percentWidth="30.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+   </columnConstraints>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <Label fx:id="labelHello" prefHeight="35.0" prefWidth="126.0" text="Hello!!!" wrapText="true" />
+      <Label text="Name:" GridPane.rowIndex="1" />
+      <Label text="email:" GridPane.rowIndex="2" />
+
+      <Button mnemonicParsing="false" onAction="#pressButton" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+      <TextField fx:id="txtName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
